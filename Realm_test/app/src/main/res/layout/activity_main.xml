@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".view.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnInit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认值" />
+
+        <Button
+            android:id="@+id/btnAddOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单条添加" />
+
+        <Button
+            android:id="@+id/btnInsertOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="插入一条" />
+        <Button
+            android:id="@+id/btnInsertList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="插入多条" />
+        <Button
+            android:id="@+id/updateOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改一条" />
+        <Button
+            android:id="@+id/deleteOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除一条" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清空" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:textSize="20sp" />
+</RelativeLayout>
